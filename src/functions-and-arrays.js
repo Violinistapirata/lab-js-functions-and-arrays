@@ -1,5 +1,18 @@
 // Iteration 1 | Find the Maximum
-function maxOfTwoNumbers() {}
+function maxOfTwoNumbers(num1, num2) {
+    const bothNumbers = [num1, num2];
+    function randomNumber(numberArray){
+        const randomIndex = Math.floor(Math.random()*numberArray.length);
+        return numberArray[randomIndex];
+    }
+    if (num1 > num2){
+        return num1;
+    } else if (num1 < num2){
+        return num2;
+    } else {
+        return randomNumber(bothNumbers);
+    }
+}
 
 
 
